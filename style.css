@@ -86,7 +86,7 @@ nav a:hover {
 }
 
 .hero h2 {
-    color: #00d4ff;
+    color: #ffffff !important;
     margin-bottom: 20px;
 }
 
@@ -277,7 +277,36 @@ body {
 
 @media (max-width: 600px) {
     .portfolio-container {
-        grid-template-columns: 1fr;
+        gr
+/* Final Contact Form Layout Fix */
+
+#contactForm {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 30px auto !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+}
+
+#contactForm input,
+#contactForm textarea {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 10px 0 !important;
+    padding: 15px !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+}
+
+#contactForm button {
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+id-template-columns: 1fr;
     }
 
     #portfolio h2 {
@@ -568,4 +597,77 @@ body.dark p {
     background: #05b9d3;
     transform: translateY(-3px);
 }
+}
+
+/* Contact Form Responsive Fix */
+
+#contactForm {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contactForm input,
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#contactForm textarea {
+    height: 130px;
+}
+
+#contactForm button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #contactForm {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Contact Section Button Fix */
+
+button[onclick="darkMode()"] {
+  display: block;
+  width: auto !important;
+  min-width: 220px;
+  margin: 35px auto;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.hero h1,
+.hero-content h1 {
+    color: #ffffff !important;
+    opacity: 1;
+    text-shadow: 2px 2px 5px #003355;
+}.hero h2 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-shadow: 2px 2px 5px #003355;
+}
+#home h2 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
