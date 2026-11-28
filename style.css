@@ -679,3 +679,13 @@ button[onclick="darkMode()"] {
     display: block;
     margin: 20px auto;
 }
+#about img.profile-img {
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
+    margin: 20px auto !important;
+}
